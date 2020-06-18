@@ -125,10 +125,85 @@ header .navbar__item a {
     width: 90px;
 }
 
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article.main__col {
+    float: left;
+    width: 65%;
+}
+
+aside.sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.quote--btn {
+    height: 37px;
+    background: #e8491d;
+    border: 0;
+    padding: 3px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.services__item {
+    list-style: none;
+    padding: 20px;
+    border: #ccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+.sidebar .quote input,
+.sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
 footer {
     padding: 20px;
     margin-top: 20px;
     text-align: center;
     color: #fff;
     background-color: #e8491d;
+}
+
+@media (max-width: 768px) {
+    header .brand,
+    header .navbar,
+    header .navbar .navbar__item,
+    .newletter .newletter__title,
+    .newletter__form,
+    .box .box__item,
+    .main__col,
+    .sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    .newletter__title {
+        margin-top: 40px;
+    }
+
+    .newletter button {
+        display: block;
+        width: 100%;
+    }
+
+    .newletter__form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
